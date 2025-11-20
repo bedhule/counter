@@ -1,0 +1,11 @@
+.badan1{
+    background-color: lightgray;
+    margin: 250px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+body{
+    background-color: grey;
+}

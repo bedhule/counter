@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body style="text-align: center;">
+    <div class="badan1">
+        <div class="itung-itung">
+            <h1>0</h1>
+
+        </div>
+        <div class="counter-buttons"> 
+            <button style="background-color: aqua;" class="b1">-</button>
+            <button style="background-color: red;">apus</button>
+            <button style="background-color: green;" class="b2">+</button>
+    </div>
+    <script>
+        const displayElement = document.querySelector('.itung-itung h1');
+        const buttons = document.querySelectorAll('.counter-buttons button');
+
+        let count = 0;
+
+        buttons[0].addEventListener('click', () => {
+            count--;
+            displayElement.textContent = count;
+        });
+
+        buttons[1].addEventListener('click', () => {
+            count = 0;
+            displayElement.textContent = count;
+        });
+
+        buttons[2].addEventListener('click', () => {
+            count++;
+            displayElement.textContent = count;
+        });
+    </script>
+</body>
+</html>
